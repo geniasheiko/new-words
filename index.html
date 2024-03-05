@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+<head>
+   <div class="wrapper">
+      <div class="container">
+         <div class="input-block">
+            <label>СЛОВО</label>
+            <p>Введите слово на русском</p>
+            <input type="text" id="word1"> </br>
+         </div>
+         <div class="input-block">
+            <label>ПЕРЕВОД</label>
+            <p>Сюда перевод на немецком</p>
+            <input type="text" id="translate1">
+         </div>
+      </div>
+      <div class="separator">
+         <hr />
+      </div>
+      <div class="container">
+         <div class="input-block">
+            <label>СЛОВО</label>
+            <p>Введите слово на русском</p>
+            <input type="text" id="word2"> </br>
+         </div>
+         <div class="input-block">
+            <label>ПЕРЕВОД</label>
+            <p>Сюда перевод на немецком</p>
+            <input type="text" id="translate2">
+         </div>
+      </div>
+      <div class="separator">
+         <hr />
+      </div>
+      <div class="container">
+         <div class="input-block">
+            <label>СЛОВО</label>
+            <p>Введите слово на русском</p>
+            <input type="text" id="word3"> </br>
+         </div>
+         <div class="input-block">
+            <label>ПЕРЕВОД</label>
+            <p>Сюда перевод на немецком</p>
+            <input type="text" id="translate3">
+         </div>
+      </div>
+      <button class="button-save">Сохранить</button>
+   </div>
+
+
+</head>
+
+<body>
+
+   <script>
+      //---------Create object
+      var words = {};
+      var word1 = document.getElementById("word1");
+      var translate1 = document.getElementById("translate1");
+      var subscribe1 = word1.value;
+      var subscribe2 = translate1.value;
+
+      var word2 = document.getElementById("word2");
+      var translate2 = document.getElementById("translate2");
+      var subscribe3 = word2.value;
+      var subscribe4 = translate2.value;
+
+      var word3 = document.getElementById("word3");
+      var translate3 = document.getElementById("translate3");
+      var subscribe5 = word3.value;
+      var subscribe6 = translate3.value;
+
+      //---------Add new element to object
+      function addElementToObject() {
+         words[subscribe1] = subscribe2;
+         words[subscribe3] = subscribe4;
+         words[subscribe5] = subscribe6;
+      };
+
+      //---------
+      button.addEventListener("click", addElementToObject);
+
+
+
+
+
+
+
+
+
+
+   </script>
+</body>
+
+</html>

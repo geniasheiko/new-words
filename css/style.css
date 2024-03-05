@@ -1,0 +1,22 @@
+.wrapper {
+   width: 500px;
+   margin: 0 auto;
+   text-align: center;
+   background-color: aliceblue;
+   padding: 20px;
+   border: 1px solid black;
+}
+
+.input-block {
+   margin-bottom: 10px;
+   border-color: blue;
+   border-width: 15px;
+}
+
+.button-save {
+   width: 90px;
+   height: 30px;
+   border-radius: 4px;
+   background-color: rgb(153, 153, 247);
+   border-color: cornflowerblue;
+}

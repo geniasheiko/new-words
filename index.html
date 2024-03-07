@@ -5,12 +5,12 @@
 <head>
    <div class="wrapper">
       <div class="container">
-         <div class="input-block">
+         <div class="input-block" id="words-rus1">
             <label>СЛОВО</label>
             <p>Введите слово на русском</p>
             <input type="text" id="word1"> </br>
          </div>
-         <div class="input-block">
+         <div class="input-block" id="words-deutsch1">
             <label>ПЕРЕВОД</label>
             <p>Сюда перевод на немецком</p>
             <input type="text" id="translate1">
@@ -20,12 +20,12 @@
          <hr />
       </div>
       <div class="container">
-         <div class="input-block">
+         <div class="input-block" id="words-rus2">
             <label>СЛОВО</label>
             <p>Введите слово на русском</p>
             <input type="text" id="word2"> </br>
          </div>
-         <div class="input-block">
+         <div class="input-block" id="words-deutsch2">
             <label>ПЕРЕВОД</label>
             <p>Сюда перевод на немецком</p>
             <input type="text" id="translate2">
@@ -35,18 +35,19 @@
          <hr />
       </div>
       <div class="container">
-         <div class="input-block">
+         <div class="input-block" id="words-rus3">
             <label>СЛОВО</label>
             <p>Введите слово на русском</p>
             <input type="text" id="word3"> </br>
          </div>
-         <div class="input-block">
+         <div class="input-block" id="words-deutsch3">
             <label>ПЕРЕВОД</label>
             <p>Сюда перевод на немецком</p>
             <input type="text" id="translate3">
          </div>
       </div>
-      <button class="button-save">Сохранить</button>
+      <button class="button-save" id="click-me">Сохранить</button>
+      <button class="button-check" id="click-me">Проверить</button>
    </div>
 
 
@@ -54,44 +55,7 @@
 
 <body>
 
-   <script>
-      //---------Create object
-      var words = {};
-      var word1 = document.getElementById("word1");
-      var translate1 = document.getElementById("translate1");
-      var subscribe1 = word1.value;
-      var subscribe2 = translate1.value;
-
-      var word2 = document.getElementById("word2");
-      var translate2 = document.getElementById("translate2");
-      var subscribe3 = word2.value;
-      var subscribe4 = translate2.value;
-
-      var word3 = document.getElementById("word3");
-      var translate3 = document.getElementById("translate3");
-      var subscribe5 = word3.value;
-      var subscribe6 = translate3.value;
-
-      //---------Add new element to object
-      function addElementToObject() {
-         words[subscribe1] = subscribe2;
-         words[subscribe3] = subscribe4;
-         words[subscribe5] = subscribe6;
-      };
-
-      //---------
-      button.addEventListener("click", addElementToObject);
-
-
-
-
-
-
-
-
-
-
-   </script>
+   <script src="js/index.js"></script>
 </body>
 
 </html>

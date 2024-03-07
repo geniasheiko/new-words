@@ -20,3 +20,22 @@
    background-color: rgb(153, 153, 247);
    border-color: cornflowerblue;
 }
+
+.button-check {
+   display: none;
+   width: 90px;
+   height: 30px;
+   border-radius: 4px;
+   background-color: rgb(153, 153, 247);
+   border-color: cornflowerblue;
+}
+
+.labels {
+   display: none;
+}
+
+
+
+.active {
+   display: block;
+}

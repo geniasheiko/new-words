@@ -1,5 +1,9 @@
+body * {
+   font-size: 16px;
+}
+
 .wrapper {
-   width: 500px;
+   max-width: 500px;
    margin: 0 auto;
    text-align: center;
    background-color: aliceblue;
@@ -25,17 +29,8 @@
    display: none;
    width: 90px;
    height: 30px;
+   margin: auto;
    border-radius: 4px;
    background-color: rgb(153, 153, 247);
    border-color: cornflowerblue;
-}
-
-.labels {
-   display: none;
-}
-
-
-
-.active {
-   display: block;
 }
